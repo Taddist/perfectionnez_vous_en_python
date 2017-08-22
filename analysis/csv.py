@@ -3,7 +3,7 @@ import os
 
 def launch_analysis(data_file):
 	#we get the right path 
-	directory=os.path.dirname(__file__) 
+	directory=os.path.dirname(os.path.dirname(__file__))
 	# with this path, we go inside the folder `data` and get the file.
 	path_to_file=os.path.join(directory,"data",data_file) 
 
